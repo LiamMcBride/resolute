@@ -1,11 +1,20 @@
 {
-    "name": "First Extension",
+    "name": "Resolute",
     "version": "1.0.0",
-    "description": "First Extension",
+    "description": "Resolute",
     "manifest_version": 3,
     "author": "Liam McBride",
     "action":{
         "default_popup": "index.html",
-        "default_title": "First Extension"
-    }
+        "default_title": "Resolute"
+    },
+    "content_scripts": [
+        {
+        "js": ["app.js"],
+        "matches": [
+            "https://developer.chrome.com/docs/extensions/*",
+            "https://developer.chrome.com/docs/webstore/*"
+        ]
+        }
+    ]
 }

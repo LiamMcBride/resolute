@@ -1,3 +1,7 @@
+window.onload = function () {
+    startApp();
+}
+
 let testObj = {
     "current": {
         "course": "HCI",
