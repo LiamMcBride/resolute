@@ -1,0 +1,11 @@
+{
+    "name": "First Extension",
+    "version": "1.0.0",
+    "description": "First Extension",
+    "manifest_version": 3,
+    "author": "Liam McBride",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "First Extension"
+    }
+}
