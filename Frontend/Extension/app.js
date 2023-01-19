@@ -13,11 +13,18 @@ let testObj = {
 
 function startApp(){
     let current = document.getElementById("current-div");
-    let html = `
-    <h2>${testObj["current"]["course"]}</h2>
-    <h2>${testObj["current"]["type"]}</h2>
-    <h2>${testObj["current"]["start-date-time"]}</h2>
-    <h2>${testObj["current"]["duration"]}</h2>
-    `
+    let html = createEntry(testObj);
     current.innerHTML = html;
+}
+
+function createEntry(obj){
+    return `
+    <div class="entry">
+        <div>${testObj["current"]["course"]}</div>
+        <div>${testObj["current"]["type"]}</div>
+        <div>${testObj["current"]["duration"]}</div>
+        <button class="pause-btn"></button>
+        <button class="stop-btn"></button>
+    </div>
+    `;
 }

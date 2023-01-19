@@ -1,0 +1,21 @@
+.entry {
+    display: grid;
+    height: 25px;
+    grid-template-columns: 1fr 1fr 1fr 25px 25px;
+}
+
+.entry div, .entry {
+    text-align: left;
+    padding: 5px 0;
+}
+
+.new-entry {
+    display: grid;
+    height: 25px;
+    grid-template-columns: 1fr 1fr 1fr 50px;
+}
+
+input{
+    width: 100px;
+
+}

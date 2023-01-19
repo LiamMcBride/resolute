@@ -3,13 +3,28 @@
 <head>
     <title>Resolute</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container" style="width: 450px;">
         <h1>Current</h1>
         <div id="current-div"></div>
         <h1>New</h1>
-        <div id="new-div"></div>
+        <div id="new-div">
+            <div class="entry new-entry">
+                <input type="text" placeholder="Course"></input>
+                <input type="text" placeholder="Type"></input>
+                <div></div>
+                <button class="start-btn">Start</button>
+            </div>
+        </div>
+    </div>
+    <div class="entry">
+        <div>HCI</div>
+        <div>Homework</div>
+        <div>5 min</div>
+        <button class="pause-btn"></button>
+        <button class="stop-btn"></button>
     </div>
 </body>
 <script src="app.js"></script>
