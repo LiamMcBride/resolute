@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(81, 81, 81);
+}
+
 .entry {
     display: grid;
     height: 25px;
@@ -7,6 +11,14 @@
 .entry div, .entry {
     text-align: left;
     padding: 5px 0;
+}
+
+.pause-btn {
+    background-color: orangered;
+}
+
+.stop-btn {
+    background-color: red;
 }
 
 .new-entry {
