@@ -1,0 +1,107 @@
+body {
+    background-color: rgb(126, 126, 126);
+}
+
+button{
+    border-radius: 5px;
+    border: none;
+    padding: 4px;
+}
+
+.card {
+    background-color: #D9D9D9;
+    display: block;
+    width: 475px;
+    min-height: 150px;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    margin: 8px;
+}
+
+.card h1 {
+    font-size: 24px;
+}
+
+.card button{
+    border-radius: 5px;
+    background-color: #61C9A8;
+    border: none;
+    padding: 4px;
+    min-width: 175px;
+    min-height: 50px;
+}
+
+.complete-task {
+    background-color: white;
+    /* width: 100%; */
+    margin: 4px;
+    padding: 4px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.complete-task .task-table {
+    display: grid;
+    grid-template-columns: 30% 20% 30% 20%;
+}
+
+.complete-task .task-table div {
+    display: inline-block;
+}
+
+.task-table .button-holder button {
+    display: inline-block;
+    min-width: 25;
+    min-height: 25;
+    width: 25;
+    height: 25;
+    opacity: 50%;
+}
+
+.task-table .button-holder .start-button {
+    background-color: #61C9A8;
+}
+.task-table .button-holder .end-button {
+    background-color: #EE4266;
+}
+.task-table .button-holder .grade-button {
+    background-color: #D9D9D9;
+}
+
+.task-table .button-holder {
+    display: flex;
+    justify-items: right;
+}
+
+.calendar .days-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.calendar .month-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.calendar-day {
+    min-height: 50px;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.calendar-day .calendar-circle {
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+    height: 25px;
+    width: 25px;
+}
+
+.current-day .calendar-circle{
+    background-color: #61C9A8;
+}
