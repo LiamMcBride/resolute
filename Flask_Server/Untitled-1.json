@@ -1,0 +1,18 @@
+[
+    {
+        "id": "897f84ea-a1ab-11ed-a02a-de1980346c11",
+        "username": "mailmcbride",
+        "firstName": "Liam",
+        "lastName": "McBride",
+        "age": 20,
+        "password": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824"
+    },
+    {
+        "id": "897f858a-a1ab-11ed-a02a-de1980346c11",
+        "username": "test1",
+        "firstName": "test1",
+        "lastName": "test1",
+        "age": 50,
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
+    }
+]

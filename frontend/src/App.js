@@ -1,13 +1,13 @@
 import './App.css';
-import { NewTaskCard } from './Card';
-import { Form } from './Form';
+import { HomeScreen } from './HomeScreen';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {NewTaskCard()}
-        {Form()}
+        {/* {NewTaskCard()}
+        {Form()} */}
+        {HomeScreen()}
       </header>
     </div>
   );

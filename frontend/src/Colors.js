@@ -1,0 +1,1 @@
+export let green = "#61C9A8"

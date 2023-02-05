@@ -1,0 +1,42 @@
+[
+    {
+        "id": "897f84ea-a1ab-11ed-a02a-de1980346c11",
+        "username": "mailmcbride",
+        "firstName": "Liam",
+        "lastName": "McBride",
+        "age": 20,
+        "password": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824"
+    },
+    {
+        "id": "897f858a-a1ab-11ed-a02a-de1980346c11",
+        "username": "test1",
+        "firstName": "test1",
+        "lastName": "test1",
+        "age": 50,
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
+    },
+    {
+        "id": "44054e38-a1c2-11ed-847a-de1980346c11",
+        "username": "1",
+        "firstName": "1",
+        "lastName": "1",
+        "age": "1",
+        "password": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+        "id": "61232b7a-a1c2-11ed-8990-de1980346c11",
+        "username": "Matt",
+        "firstName": "Matthew",
+        "lastName": "Nolen",
+        "age": "20",
+        "password": "765bfb9270edb7b8b9c5af04aa725556fb7993e745d0940eff1c67bf78b70bbe"
+    },
+    {
+        "id": "3ca23352-a24b-11ed-abc2-de1980346c11",
+        "username": "finja",
+        "firstName": "Finn",
+        "lastName": "McBride",
+        "age": "22",
+        "password": "e0e2087b3efad83c23c899efb0059a16d9ee9d4ef51349c6066548b8d01f1ab8"
+    }
+]
