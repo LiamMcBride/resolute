@@ -1,8 +1,76 @@
 import React from "react";
 import { ConfirmButton } from "./Button";
-import { green } from "./Colors";
+import { gray, green, red } from "./Colors";
 
-
+let events = 
+    [
+        {
+            "title": "Homework 1",
+            "course": "Linear",
+            "type": "Homework",
+            "duration": 217
+        },
+        {
+            "title": "Homework 2",
+            "course": "Linear",
+            "type": "Homework",
+            "duration": 100
+        },
+        {
+            "title": "Quiz 1",
+            "course": "Systems",
+            "type": "Quiz",
+            "duration": 44
+        },
+        {
+            "title": "Blacksburg",
+            "course": "iOS Dev",
+            "type": "Tutorial",
+            "duration": 240
+        },
+        {
+            "title": "Homework 1",
+            "course": "Linear",
+            "type": "Homework",
+            "duration": 217
+        },
+        {
+            "title": "Homework 1",
+            "course": "Linear",
+            "type": "Homework",
+            "duration": 217
+        },
+        {
+            "title": "Homework 1",
+            "course": "Linear",
+            "type": "Homework",
+            "duration": 217
+        },
+        {
+            "title": "Homework 1",
+            "course": "Linear",
+            "type": "Homework",
+            "duration": 217
+        },
+        {
+            "title": "Homework 1",
+            "course": "Linear",
+            "type": "Homework",
+            "duration": 217
+        },
+        {
+            "title": "Homework 1",
+            "course": "Linear",
+            "type": "Homework",
+            "duration": 217
+        },
+        {
+            "title": "Homework 1",
+            "course": "Linear",
+            "type": "Homework",
+            "duration": 217
+        }
+    ]  
 
 
 export function Card(title, internalObjects){
@@ -129,4 +197,110 @@ export function ThisWeekProductivityCard(data){
     
 
     return (Card(data['title'], ProductivityGraph(data)))
+}
+
+export function RecentEventsCard(){
+    let event = {
+        "title": "Homework 1",
+        "course": "Linear",
+        "type": "Homework",
+        "duration": 217
+    }
+
+    let divStyle = {
+        display: "grid",
+        gridTemplateColumns: "0.7fr 1fr 1fr 0.5fr 25px 25px 25px",
+        padding: "4px",
+        textAlign: "left",
+        gridGap: "4px",
+        margin: "4px"
+    }
+
+    const holder = () => {
+        return (
+            <div>
+                <div style={divStyle}>
+                    <div>Course</div>
+                    <div>Type</div>
+                    <div>Assignment</div>
+                    <div>Duration</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                {events.map((e) => {
+                    return Event(e)
+                })}
+            </div>
+        );
+    }
+
+    return (Card("Recent Events", holder()))
+}
+
+/*
+    {
+        "title": "",
+        "course": "",
+        "type": "",
+        "duration": 90
+    }
+*/
+
+function Event(event){
+
+    let divStyle = {
+        display: "grid",
+        gridTemplateColumns: "0.7fr 1fr 1fr 0.5fr 25px 25px 25px",
+        backgroundColor: "white",
+        borderRadius: "5px",
+        padding: "4px",
+        textAlign: "left",
+        gridGap: "4px",
+        margin: "4px"
+    }
+
+    let squareStyle = (color) => {
+        return {
+            backgroundColor: color,
+            opacity: "0.5",
+            minWidth: "25px",
+            minHeight: "25px",
+            width: "25px",
+            height: "25px"
+        }
+    }
+
+    let time = getHourAndMinutesFromMinutes(event["duration"]) 
+
+    if(time["hour"].toString().length < 2){
+        time["hour"] = `0${time['hour']}`
+    }
+    if(time["minutes"].toString().length < 2){
+        time["minutes"] = `0${time['minutes']}`
+    }
+
+
+    return (
+        <div style={divStyle}>
+            <div>{event["course"]}</div>
+            <div>{event["type"]}</div>
+            <div>{event["title"]}</div>
+            <div>{`${time['hour']}:${time['minutes']}`}</div>
+            <div style={squareStyle(gray)}></div>
+            <div style={squareStyle(green)}></div>
+            <div style={squareStyle(red)}></div>
+
+        </div>
+    )
+}
+
+function getHourAndMinutesFromMinutes(min){
+    let hours = Math.floor(min / 60)
+    let minutes = Math.floor(60 * ((min / 60) - hours))
+
+    return {
+        "hour": hours,
+        "minutes": minutes
+    }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, NewTaskCard, ThisWeekProductivityCard } from "./Card";
+import { Card, NewTaskCard, RecentEventsCard, ThisWeekProductivityCard } from "./Card";
 import { green } from "./Colors";
 import { User } from "./User";
 
@@ -69,6 +69,7 @@ export function HomeScreen() {
                 <div>
                     {NewTaskCard()}
                     {ThisWeekProductivityCard(testData2)}
+                    {RecentEventsCard()}
                 </div>
             </div>
         </div>
